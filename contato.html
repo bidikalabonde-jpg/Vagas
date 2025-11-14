@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Contato - Hypecore</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="sobre.html">Sobre</a></li>
+            </ul>
+        </nav>
+        <h1>Contato Hypecore</h1>
+        <p>Se você tiver alguma dúvida ou precisar de mais informações, entre em contato conosco através do formulário abaixo:</p>
+        
+        <form id="formContato">
+            <label for="nomeContato">Nome Completo:</label><br>
+            <input type="text" id="nomeContato" name="nomeContato" required><br><br>
+            
+            <label for="emailContato">Email:</label><br>
+            <input type="email" id="emailContato" name="emailContato" required><br><br>
+            
+            <label for="mensagemContato">Mensagem:</label><br>
+            <textarea id="mensagemContato" name="mensagemContato" rows="4" cols="50" required></textarea><br><br>
+            
+            <div id="mensagemContatoResposta"></div><br>
+            <input type="submit" value="Enviar Mensagem">
+        </form>
+    </body>

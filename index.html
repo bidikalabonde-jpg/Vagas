@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Vagas de TI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav>
+        <ul>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
+
+    <h1>Vagas de TI</h1>
+    <h2>Seja Contratado na Hypecore, a Empresa mais promissora do país</h2>
+    <p>Faça seu cadastro na Hypecore!</p>
+
+    <h1>Formulário de Cadastro</h1>
+
+    <form id="formCadastro">
+
+        <label for="nome">Nome Completo:</label><br>
+        <input type="text" id="nome" name="nome" required><br><br>
+
+        <label for="email">Email:</label><br>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="telefone">Telefone:</label><br>
+        <input type="tel" id="telefone" name="telefone" required><br><br>
+
+        <label for="experiencia">Experiência Profissional:</label><br>
+
+        <label for="periodoInicio">Período de Início:</label><br>
+        <input type="date" id="periodoInicio" name="periodoInicio" required><br><br>
+
+        <label for="periodoFim">Período de Fim:</label><br>
+        <input type="date" id="periodoFim" name="periodoFim" required><br><br>
+
+        <label for="atividade">Descreva suas atividades nesta experiência:</label><br>
+        <textarea id="atividade" name="atividade" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="habilidades">Habilidades:</label><br>
+        <textarea id="habilidades" name="habilidades" rows="4" cols="50" required></textarea><br><br>
+
+        <label for="curriculo">Upload do Currículo:</label><br>
+        <input type="file" id="curriculo" name="curriculo" accept=".pdf,.doc,.docx" required><br><br>
+
+        <fieldset class="area-interesse">
+            <legend>Selecione a área de interesse:</legend>
+
+            <label class="option">
+                <input type="checkbox" name="area" value="backend">
+                <span>Dev Backend</span>
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="area" value="frontend">
+                <span>Dev Frontend</span>
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="area" value="suporte">
+                <span>Suporte Técnico</span>
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="area" value="design">
+                <span>Design</span>
+            </label>
+
+            <label class="option">
+                <input type="checkbox" name="area" value="banco">
+                <span>Banco de Dados</span>
+            </label>
+        </fieldset>
+
+        <div id="mensagem"></div><br>
+
+        <input type="submit" value="Enviar Cadastro">
+    </form>
+
+    <footer>
+        <p>© 2024 Hypecore. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
